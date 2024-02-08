@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guess the Random number from 1 to 10 </h1>
+    <input id="input"> <button onclick="validate()">check</button>
+    <h2 id ="one"></h2>
+    <h2 id ="two">Your Score : </h2>
+    <script>
+        var score = 10
+        function validate()
+        {
+            var value=Number(document.getElementById("input").value)
+            if(value == Math.floor(Math.random()*10+1))
+            {
+                document.getElementById("one").textContent = "Yay! you chose right!!"
+                document.getElementById("two").textContent = "Your Score : "+(++score)
+            }
+            else
+            {
+                document.getElementById("one").textContent = "Oh! you chose Wrong!!"
+                if(score==0)
+                document.getElementById("two").textContent = "Your Score : 0" 
+                else
+                document.getElementById("two").textContent = "Your Score : "+(--score)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="two">Hello world</h1>
+    <p id = "one">Hello</p>
+    <button onclick="change()">Change</button>
+    <script>
+      //  console.log(document.getElementById("one").textContent)
+      var para = document.getElementById("one")
+      para.textContent = "hello Sibaath"
+      function change()
+      {
+        if(document.getElementById("two").textContent=="Bye world")
+        document.getElementById("two").textContent="Hello world"
+        else
+        document.getElementById("two").textContent="Bye world"
+      }
+    </script>
+</body>
+</html>

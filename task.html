@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  id = "num1"><br>
+    <input  id = "num2"><br>
+    <button onclick="add()">Calc</button>
+    <p id="para">Result </p>
+    <script>
+        function add()
+        {
+            var num1 = Number(document.getElementById("num1").value)
+            var num2 = Number(document.getElementById("num2").value)
+            document.getElementById("para").textContent = "Result = "+(num1+num2)
+        }
+    </script>
+</body>
+</html>

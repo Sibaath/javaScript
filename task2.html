@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">Add</button>
+    <div id = "box"></div>
+    <script>
+        function add()
+        {
+         //   var h1 = document.getElementById("h1")
+         //   h1.append("hello");
+         var h1 = document.createElement("h1")
+         h1.textContent="hello"
+         box.append(h1)
+        }
+    </script>
+</body>
+</html>
